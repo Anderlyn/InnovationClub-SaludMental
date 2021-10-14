@@ -1,0 +1,162 @@
+@font-face {
+  font-family: titles;
+  src: url(./fonts/old_book.ttf);
+}
+@font-face {
+  font-family: texts;
+  src: url(./fonts/bookmark.ttf);
+}
+
+@keyframes fade_out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  background-image: url('./img/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1,
+h2 {
+  font-family: titles;
+  text-align: center;
+  margin: 0;
+}
+p,
+a {
+  font-family: texts;
+  text-align: center;
+  margin: 0;
+}
+a {
+  color: black;
+}
+a:active {
+  color: black;
+}
+
+.center_container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.f64 {
+  font-size: 64px;
+}
+.f32 {
+  font-size: 32px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f8 {
+  font-size: 8px;
+}
+
+.margin-side {
+  margin: 0 5%;
+}
+
+.selection-button {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.705);
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 5px;
+}
+.selection-button:hover {
+  color: white;
+  background: black;
+}
+.selection_done {
+  color: black;
+  margin-top: 15px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 940px) {
+  .f64 {
+    font-size: 44px;
+  }
+  .f32 {
+    font-size: 24px;
+  }
+  .f24 {
+    font-size: 16px;
+  }
+  .f16 {
+    font-size: 12px;
+  }
+  .selection-button {
+    font-size: 30px;
+  }
+  .selection_done {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .f64 {
+    font-size: 36px;
+  }
+  .f32 {
+    font-size: 20px;
+  }
+  .f24 {
+    font-size: 12px;
+  }
+  .f16 {
+    font-size: 16px;
+  }
+  .selection-button {
+    font-size: 28px;
+  }
+  .selection_done {
+    font-size: 28px;
+  }
+}
